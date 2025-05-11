@@ -15,7 +15,7 @@ export const App: React.FC<Props> = ({
 }) => {
   const [inputValue, setInputValue] = useState('');
   const [filteredPeople, setFilteredPeople] = useState(peopleFromServer);
-  const [selectedPerson, setSelectedPerson] = useState<Person[] | null>(null);
+  const [selectedPerson, setSelectedPerson] = useState<Person | null>(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const prevInputRef = useRef('');
 
